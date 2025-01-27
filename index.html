@@ -1,0 +1,131 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="blinking-title">CDM CYBERS</title>
+    <link rel="icon" href="file:///C:/Users/Thiag/Downloads/d60541bc9ab6acb104a19b82420a4e60-removebg-preview.png" type="image/png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+       
+        .discord-button {
+            background-color: rgba(0, 0, 0, 0.3); 
+            color: black; 
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 8px; 
+            border: 2px solid rgba(255, 255, 255, 0.5); 
+            backdrop-filter: blur(10px);
+            text-decoration: none; 
+            transition: all 0.3s ease; 
+            position: absolute; 
+            top: 20px; 
+            right: 20px; 
+        }
+
+        
+        .discord-button:hover {
+            background-color: rgba(0, 0, 0, 0.5); 
+            border-color: rgba(255, 255, 255, 0.8); 
+        }
+
+       
+        .discord-button:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="vidoverlay" autoplay="" loop="" muted="" src="images/banner.gif"></img>
+
+    <div class="discord-profile">
+        <div class="profile animate__animated animate__fadeInUp animate__fast">
+            <div class="pfp">
+                <img src="https://api.victims.lol/api/avatar/1303899871048110104" alt="">
+            </div>
+            <div class="nick">emete</div>
+            <div class="subnick">ecdz</div>
+            <div class="badges">
+                <div class="badge" style="background-image: url('images/emete.png');" data-tooltip="my addiction is money"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="discord-profile">
+        <div class="profile animate__animated animate__fadeInUp animate__fast">
+            <div class="pfp">
+                <img src="https://api.victims.lol/api/avatar/924399436489170995" alt="">
+            </div>
+            <div class="nick">bn</div>
+            <div class="subnick">pqcr</div>
+            <div class="badges">
+                <div class="badge" style="background-image: url('images/bn.png');" data-tooltip="toma cuidado com o que você fala"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="discord-profile">
+        <div class="profile animate__animated animate__fadeInUp animate__fast">
+            <div class="pfp">
+                <img src="https://api.victims.lol/api/avatar/233287596812402689" alt="">
+            </div>
+            <div class="nick">Resilient Ƭ Ƙ Ƒ 🇵🇰</div>
+            <div class="subnick">resilientcdm</div>
+            <div class="badges">
+                <div class="badge" style="background-image: url('images/resilient.png');" data-tooltip="meu ódio camuflado na direita do meu pente"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="discord-profile">
+        <div class="profile animate__animated animate__fadeInUp animate__fast">
+            <div class="pfp">
+                <img src="https://api.victims.lol/api/avatar/1080098617924255765" alt="">
+            </div>
+            <div class="nick">c7iy</div>
+            <div class="subnick">c7iy</div>
+            <div class="badges">
+                <div class="badge" style="background-image: url('images/c7iy.png');" data-tooltip="quem cria cobra amanhece picado"></div>
+            </div>
+        </div>
+    </div>
+        
+        <input type="checkbox" autocomplete="off" id="overlay-toggle">
+        <div class="overlay fullscreen" onclick="toggleFullScreen();">
+            <label for="overlay-toggle" onclick="playAudio();">
+                <span class="overlayhover hover" style="font-family: monospace; font-size: 0.6em;">
+                    click anywhere
+                </span>
+            </label>
+        </div>
+
+        <audio loop="" preload="auto" id="audio">
+            <source src="media/msc.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script>
+        function playAudio() {
+            const audio = document.getElementById("audio");
+            audio.volume = 0.7;
+            audio.currentTime = 3.5;
+            audio.play();
+        }
+
+        function toggleFullScreen() {
+            const elem = document.documentElement;
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) {
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) {
+                elem.msRequestFullscreen();
+            }
+        }
+    </script>
+
+
+
+</body></html>
